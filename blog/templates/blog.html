@@ -95,7 +95,7 @@
       </section>
       <div class="container" >
 			{% for blog in blogs.all %}
-			<h3><a href="">{{ blog.title }}</a></h3>
+			<h3><a href="{{ blog.id }}">{{ blog.title }}</a></h3>
 			{{ blog.date }}
 			<br>
 			<img src="{{ blog.image.url }}" height=200>
